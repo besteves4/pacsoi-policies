@@ -77,7 +77,6 @@ PREFIX ex: <http://example.org/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dpv: <https://w3id.org/dpv#>
 PREFIX eu-gdpr: <https://w3id.org/dpv/legal/eu/gdpr#>
-PREFIX oac: <https://w3id.org/oac#>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -86,7 +85,6 @@ PREFIX ex: <http://example.org/>
 <http://example.org/Alice-HCPX-agreement> a odrl:Agreement ;
     odrl:uid ex:Alice-HCPX-agreement ;
     dcterms:references <http://example.org/alice-HCPX>, <http://example.org/HCPX-request> ;
-    odrl:profile oac: ;
     dcterms:description "Agreement for HCP X to read Alice's health data for bariatric care." ;
     dpv:hasLegalBasis eu-gdpr:A9-2-a ;
     odrl:permission <http://example.org/agreement-permission> .
