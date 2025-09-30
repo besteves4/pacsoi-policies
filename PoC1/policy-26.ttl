@@ -1,0 +1,13 @@
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix ex:            <https://example.org/> .
+@prefix odrl:          <http://www.w3.org/ns/odrl/2/> .
+@prefix moveUp:        <https://www.moveup.care/> .
+
+ex:uc26-p-profileQuestionnaireSensor-primarycare-patientDC-read a odrl:Set ;
+    odrl:uid ex:uc26-p-profileQuestionnaireSensor-primarycare-patientDC-read ;
+    dcterms:description "User allows anyone with a healthcare relationship with his own MoveUp patient ID read access to his profile, questionnaire, and sensor slices for primary use."@en ;
+    odrl:permission [
+        odrl:action odrl:read ; 
+        odrl:target <https://faqir.org/patientPod/sensor>, <https://faqir.org/patientPod/profile>, <https://faqir.org/patientPod/questionnaire> ; 
+        odrl:assigner ex:patient ;
+        odrl:assignee ex:healthcareProfessional ] .
